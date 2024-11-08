@@ -1,6 +1,8 @@
 # RustCalc
-A simple calculator written in Rust
-Main questions: How did the file end up so large? (1MB)
+A simple calculator written in Rust.
+
+
+Main question: How did the file end up so large? (1MB)
 
 
 
