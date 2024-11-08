@@ -28,10 +28,16 @@ fn main() {
                     let result_str = result.to_string();
                     if result_str == "42" {
                         thread::spawn(move || {
-                            Command::new("mpv")
-                                .args(&["/home/jannis/rick.mp4"])
+                            Command::new("zenity")
+                                .args(&["--info", "--text", "Please wait..."])
                                 .output()
-                                .expect("Failed to execute mpv");
+                                .expect("Failed to execute zenity");
+                        });
+                        thread::spawn(move || {
+                            Command::new("mpv")
+                                .args(&["https://www.youtube.com/watch?v=T9LkhsvTNiQ"])
+                                .output()
+                                .expect("Failed to do it");
                         });
                     } else {
                         let result_message = format!("Result: {}", result);
