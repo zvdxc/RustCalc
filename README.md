@@ -1,6 +1,8 @@
 # RustCalc
 A simple calculator written in Rust.
 
+To build run "make" or "make build"
+To run run "make run"
 
 
 
