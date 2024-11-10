@@ -7,10 +7,11 @@ run:
 
 build:
 	cargo build -r
-
+	cp -v target/release/untitled rustcalc
 
 clean:
 	rm -vr target
+	rm -v rustcalc
 
 install:
 	cargo install --path .
